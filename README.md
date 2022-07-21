@@ -1,27 +1,18 @@
-API проекта Yatube
-Стек технологий: python, django, DRF, git, sqlite
+## Yatube Api.
+### Финальный проект 9-го спринта.
+### Яндекс.Практикум. 5-я когорта pythonplus.
+### Студент: Андрей Федотов.
+### Restapi для блога Yatube.
 
-Функционал API:
-```
-1) Просмотр, создание и редактирвание постов.
-```
-2) Просмотр групп.
-```
-3) Просмотр, создание и редактирвание коментариев.
-```
-4) Подписка на пользователей.
-```
-
-### Как запустить проект:
-
+## Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/Anxeity/api_final_yatube.git
+git clone https://github.com/aafedotov/api_final_yatube.git
 ```
 
 ```
-cd kittygram
+api_final_yatube
 ```
 
 Cоздать и активировать виртуальное окружение:
@@ -55,3 +46,25 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
+
+## Примеры запросов к API:
+
+```angular2html
+GET
+http://127.0.0.1:8000/api/v1/posts/
+Получение списка всех постов
+```
+
+```angular2html
+GET
+http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
+Получение списка комментариев к посту
+```
+
+```angular2html
+GET
+http://127.0.0.1:8000/api/v1/follow/
+Получение списка подписок.
+```
+
+### Подробная информация по Api в ReDoc.
